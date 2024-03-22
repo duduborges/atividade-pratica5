@@ -22,6 +22,21 @@ passo 3- se o sexo for f, soma salario
 passo 4- se o sexo for m, soma salario
 }
 */
+let salarioM = 0
+let salarioF = 0
+
+for (let i; i < 3; i++) {
+    let sexo = prompt("Digite seu sexo (M / F)").toLowerCase()
+    let salario = Number("Digite seu salario")
+    if (sexo == "m") {
+        salarioM += salario
+    } else if (sexo == "f") {
+        salarioF += salario
+    }
+}
+console.log("Salario pagos aos homens: " + salarioM)
+console.log("Salario pagos aos mulheres: " + salarioF)
+
 
 /*
 
@@ -45,6 +60,10 @@ console.log("Acabou!")
 
 /*
 ----------- 4
+let sexo = prompt("Digite seu sexo (M / F)")
+let compras = Number(prompt("Digite seu salário"))
+
+
 if (sexo == "f") {
     let percentual = 0.13
     let valorNovo = compras * percentual
