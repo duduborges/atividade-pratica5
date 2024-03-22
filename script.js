@@ -1,6 +1,6 @@
 /*
-------------1
-let idade = 0
+----------- 1 --------------
+let idade = 0 
 while (idade !== 999) {
     idade = Number(prompt("Digite a idade do aluno"))
 }
@@ -9,25 +9,14 @@ while (idade !== 999) {
 
 
 /*
-2. Desenvolva um aplicativo que leia o salário e o sexo de vários
-funcionários. No final, mostre o total de salários pagos aos homens e
-o total pago às mulheres. O programa vai perguntar ao usuário se
-ele quer continuar ou não sempre que ler os dados de um
-funcionário.
+----------- 2 --------------
 
-em um loop{}
-passo1 - ler o sexo
-passo 2- ler o salario 
-passo 3- se o sexo for f, soma salario
-passo 4- se o sexo for m, soma salario
-}
-*/
 let salarioM = 0
 let salarioF = 0
 
-for (let i; i < 3; i++) {
+for (let i = 0; i < 10  ; i++) {
     let sexo = prompt("Digite seu sexo (M / F)").toLowerCase()
-    let salario = Number("Digite seu salario")
+    let salario = Number(prompt("Digite seu salario"))
     if (sexo == "m") {
         salarioM += salario
     } else if (sexo == "f") {
@@ -36,11 +25,12 @@ for (let i; i < 3; i++) {
 }
 console.log("Salario pagos aos homens: " + salarioM)
 console.log("Salario pagos aos mulheres: " + salarioF)
+*/
 
 
 /*
+----------- 3 --------------
 
--------------- 3
 let primeiroValor = Number(prompt("Digite o primeiro Valor: "))
 let ultimoValor = Number(prompt("Digite o último Valor: "))
 let incremento = Number(prompt("Digite o incremento: "))
@@ -59,7 +49,8 @@ console.log("Acabou!")
 
 
 /*
------------ 4
+----------- 4 --------------
+
 let sexo = prompt("Digite seu sexo (M / F)")
 let compras = Number(prompt("Digite seu salário"))
 
@@ -80,8 +71,8 @@ if (sexo == "f") {
 */
 
 /*
+----------- 5 --------------
 
------------ 5
 let distancia = Number(prompt("Digite a distancia que deseja percorrer"))
 let valor = 0
 if (distancia <= 200) {
@@ -93,12 +84,17 @@ alert("O valor da passagem é: R$" + valor * distancia)
 */
 
 /*
+----------- 6 --------------
+let largura = Number(prompt("Digite a largura do terreno"))
+let comprimento = Number(prompt("Digite a comprimento do terreno"))
 
-6. Faça um programa que leia a largura e o comprimento de um
-terreno retangular, calculando e mostrando a sua área em m2. O
-programa também deve mostrar a classificação desse terreno, de
-acordo com a lista abaixo:
-Abaixo de 100m2 = TERRENO POPULAR
-Entre 100m2 e 500m2 = TERRENO MASTER
-Acima de 500m2 = TERRENO VIP
+let area = (largura * comprimento)
+if (area < 100) {
+    alert("Terreno popular")
+} else if (area >= 100 && area < 500) {
+    alert("Terreno master")
+} else if (area > 500) {
+    alert("Terreno VIP")
+}
 */
+
